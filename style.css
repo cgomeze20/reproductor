@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+ :root {
+     --colorPrincipal: #42e695;
+     --colorSecundario: #3bb2b8;
+ }
+body{
+ background: linear-gradient(to right,var(--colorPrincipal),var(--colorSecundario));
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.3em;
+ width: 50%;
+ margin: 15px auto;
+ padding: 20px;
+ text-align: center;
+ min-height: 50vh;
+}
+#playlist {
+    background: #fff;
+    border-radius: 10px;
+    text-align: left;
+    opacity: 0.8;
+    color:var(--colorSecundario);
+}
+
+li {
+    padding: 10px;
+
+}
+li:hover,svg:hover {
+    cursor: pointer;
+    color:var(--colorSecundario);
+}
+li:active{
+    color:var(--colorPrincipal);
+}
+#controls {
+    border: 1px solid #eee ;
+    border-radius: 14px;
+    padding: 10px;
+    background: #fff;
+    opacity: 0.5;
+}
+svg {
+    color: var(--colorPrincipal);
+}
+progress {
+    width: 80%;
+    margin: 10px;
+    opacity: 0.5;
+}
+.timer{
+    width: 50%;
+    position: relative;
+    top:10px;
+    left: 0px;
+    text-align: left;
+    float: left;
+    color: var (--colorPrincipal);
+}
+.volumen{
+    width: 50%;
+    position: relative;
+    top: 10px;
+    text-align: right;
+    float: left;
+    color: var(--colorPrincipal);
+    margin-bottom: 20px;
+}
+#currentlyPlay {
+    color: var(--colorPrincipal);
+}
+h3 {
+    color: var(--colorSecundario);
+}
